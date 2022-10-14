@@ -2,22 +2,25 @@ CC		= gcc -g
 NAME	= push_swap
 FLAGS	= -Wall -Wextra -Werror
 SRCS	= $(wildcard src/*.c)
-OBJS	= $(SRCS:.c=.c)
+OBJS	= $(SRCS:.c=.o)
 
 all : $(NAME)
 
-$(NAME) : d
+$(NAME) : $(OBJS) d
 	$(CC) $(FLAGS) $(OBJS) -o $(NAME) Libft/libft.a
 
 d:
-	make -C Libft
+	make bonus -C Libft
 
-re: all
+re: fclean all
 
 clean:
+	rm -rf $(OBJS)
+		rm -rf Libft/*.o
 
-fclean:
-
+fclean:	clean		
+	rm -rf $(NAME)
+	rm -rf Libft/*.a
 git:
 	git add .
 	git commit -m "$c"
@@ -25,5 +28,6 @@ git:
 
 norm:
 	@norminette $(wildcard src/*.c)
+	@norminette $(wildcard inc/*.h)
 
 .PHONY: all d re clean fleanc git norm
