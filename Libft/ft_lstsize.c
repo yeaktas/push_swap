@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../inc/push_swap.h"
 //listin boyutunu bulur.
 int	ft_lstsize(t_list *lst)
 {

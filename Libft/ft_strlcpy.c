@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../inc/push_swap.h"
 //sourcedan destinationa n-1 kadar kopyalar. sourceun uzunlugunu return eder.
 size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 {

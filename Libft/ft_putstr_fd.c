@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../inc/push_swap.h"
 //stringi fdnin icine yazar.
 void	ft_putstr_fd(char *s, int fd)
 {

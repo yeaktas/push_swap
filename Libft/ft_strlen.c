@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../inc/push_swap.h"
 //girilen kelimenin harfini sayiyor.
 size_t	ft_strlen(const char *s)
 {

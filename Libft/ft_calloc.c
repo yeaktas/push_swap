@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../inc/push_swap.h"
 //bellekte bos bir alan acar.
 void	*ft_calloc(size_t nmemb, size_t size)
 {

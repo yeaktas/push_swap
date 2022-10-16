@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../inc/push_swap.h"
 //s disini n kadar null doldurur.
 void	ft_bzero(void *s, size_t n)
 {
