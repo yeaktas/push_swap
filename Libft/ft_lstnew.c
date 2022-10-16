@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 //yeni bir node olusturuyor.
 t_list	*ft_lstnew(void *content)
 {

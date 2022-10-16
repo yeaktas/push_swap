@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 //girilen kelimenin harfini sayiyor.
 size_t	ft_strlen(const char *s)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 //char olarak girilen diziyi inte cevirir.
 int	ft_atoi(const char *str)
 {

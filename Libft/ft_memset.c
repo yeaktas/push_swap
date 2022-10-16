@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 //s dizisini n kadar c ile doldurur. 
 void	*ft_memset(void *s, int c, size_t n)
 {

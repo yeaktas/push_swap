@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 //lstnin son degeri doner.
 t_list	*ft_lstlast(t_list *lst)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 //rakam olup olmadigini kontrol ediyor.
 int	ft_isdigit(int c)
 {
