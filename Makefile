@@ -16,6 +16,7 @@ clean:
 
 fclean:	clean		
 	rm -rf $(NAME)
+
 git:
 	git add .
 	git commit -m "$c"
