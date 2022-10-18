@@ -5,43 +5,37 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/04 16:58:41 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/05 16:03:12 by yaktas           ###   ########.fr       */
+/*   Created: 2022/10/03 20:06:40 by yaktas            #+#    #+#             */
+/*   Updated: 2022/10/18 15:56:07 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
-//char olarak girilen diziyi inte cevirir.
-int	ft_atoi(const char *str)
-{
-	long int	res;
-	int			a;
 
-	a = 1;
-	res = 0;
-	while ((*str >= '\t' && *str <= '\r') || *str == ' ')
-		str++;
-	if (*str == '+' || *str == '-')
+long	ft_atoi(const char *str)
+{
+	long	i;
+	long	number;
+	int		sign;
+
+	
+	i = 0;
+	number = 0;
+	sign = 1;
+	while (str[i] && (str[i] == 32 || (str[i] >= 9 && str[i] <= 13)))
+		i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (*str == '-')
-			a *= -1;
-	str++;
+		if (str[i] == '-')
+			sign = -1;
+		i++;
 	}
-	while (*str != 0 && *str >= '0' && *str <= '9')
+	if(!str[i])
+		ft_error("Error");
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		res = res * 10 + (*str - '0') * a;
-		if (res > 2147483647)
-			return (-1);
-		if (res < -2147483648)
-			return (0);
-		str++;
+		number = (number * 10) + (str[i] - '0');
+		i++;
 	}
-	return (res);
+	return (number * sign);
 }
-
-/* int	main(void)
-{
-	char	a[] = "   	-1234";
-
-	printf("%d", ft_atoi(a));
-} */

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/12 23:42:31 by yaktas            #+#    #+#             */
-/*   Updated: 2022/03/12 23:42:31 by yaktas           ###   ########.fr       */
+/*   Created: 2022/10/03 20:07:28 by yaktas            #+#    #+#             */
+/*   Updated: 2022/10/18 15:56:40 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putstr_fd(s, fd);
+	if (!s)
+		return ;
+	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }
