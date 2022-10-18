@@ -6,7 +6,7 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 20:07:45 by yaktas            #+#    #+#             */
-/*   Updated: 2022/10/18 16:38:35 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/10/18 16:53:13 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void	check_args(int ac, char **av)
 		if (!ft_isnum(tab[i]))
 			ft_error("Error");
 		if (ft_isrepeat(num, tab, i))
-		ft_error("Error");
+			ft_error("Error");
 		if (num < -2147483648 || num > 2147483647)
 			ft_error("Error");
 		i++;

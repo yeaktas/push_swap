@@ -6,7 +6,7 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 20:06:33 by yaktas            #+#    #+#             */
-/*   Updated: 2022/10/18 16:24:17 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/10/18 16:51:41 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
 
 typedef struct stack_list
 {
-	char				c;
 	int					content;
 	int					index;
 	struct stack_list	*next;
@@ -63,10 +62,10 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 char	**ft_split(const char *s, char c);
 
 //ft_sort
-void	ft_small_sort(t_list **stackA, t_list **stackB);
-void	ft_other_three(t_list **stackA, int *nums);
-void	ft_sort_three(t_list **stackA);
-void	ft_sourt_four(t_list **stackA, t_list **stackB);
-void	ft_push_small_a(t_list **stackA, t_list **stackB, int flag);
-void	ft_sort_five(t_list **stackA, t_list **stackB);
+void	ft_small_sort(t_list **stack_a, t_list **stack_b);
+void	ft_other_three(t_list **stack_a, int *nums);
+void	ft_sort_three(t_list **stack_a);
+void	ft_sort_four(t_list **stack_a, t_list **stack_b);
+void	ft_push_small_a(t_list **stack_a, t_list **stack_b, int flag);
+void	ft_sort_five(t_list **stack_a, t_list **stack_b);
 #endif

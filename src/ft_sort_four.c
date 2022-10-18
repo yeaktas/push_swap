@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sourt_four.c                                    :+:      :+:    :+:   */
+/*   ft_sort_four.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,12 +12,12 @@
 
 #include "../inc/push_swap.h"
 
-void	ft_sourt_four(t_list **stackA, t_list **stackB)
+void	ft_sort_four(t_list **stack_a, t_list **stack_b)
 {
 	int	flag;
 
 	flag = 0;
-	ft_push_small_a(stackA, stackB, flag);
-	ft_sort_three(stackA);
-	pa(stackA, stackB);
+	ft_push_small_a(stack_a, stack_b, flag);
+	ft_sort_three(stack_a);
+	pa(stack_a, stack_b);
 }
