@@ -6,7 +6,7 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 20:06:33 by yaktas            #+#    #+#             */
-/*   Updated: 2022/10/18 16:51:41 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/10/18 17:16:45 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct stack_list
 	int					index;
 	struct stack_list	*next;
 }						t_list;
+
 //source
 void	ft_error(char *str);
 void	check_args(int ac, char **av);
@@ -35,7 +36,7 @@ int		is_sorted(t_list **stack);
 void	radix_sort(t_list **stack_a, t_list **stack_b);
 
 //operations
-int		reverserotate(t_list **stack);
+int		reverse_rotate(t_list **stack);
 int		push(t_list **dest, t_list **source);
 int		pb(t_list **stack_a, t_list **stack_b);
 int		pa(t_list **stack_a, t_list **stack_b);
@@ -50,6 +51,7 @@ int		ra(t_list **stack_a);
 int		sa(t_list **stack_a);
 int		sb(t_list **stack_b);
 int		ss(t_list **stack_a, t_list **stack_b);
+
 //libft
 int		ft_isdigit(int c);
 size_t	ft_strlen(const char *s);
