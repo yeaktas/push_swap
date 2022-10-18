@@ -6,12 +6,13 @@
 /*   By: yaktas <yaktas@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 20:07:34 by yaktas            #+#    #+#             */
-/*   Updated: 2022/10/18 15:56:45 by yaktas           ###   ########.fr       */
+/*   Updated: 2022/10/18 17:20:49 by yaktas           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
-
+//dizi icinde gonderilen kelimeleri ayirir
+//farkli bir pointere atar.
 static int	count(const char *s, char c)
 {
 	unsigned int	i;
