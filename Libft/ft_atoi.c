@@ -18,7 +18,6 @@ long	ft_atoi(const char *str)
 	long	number;
 	int		sign;
 
-	
 	i = 0;
 	number = 0;
 	sign = 1;
@@ -30,7 +29,7 @@ long	ft_atoi(const char *str)
 			sign = -1;
 		i++;
 	}
-	if(!str[i])
+	if (!str[i])
 		ft_error("Error");
 	while (str[i] >= '0' && str[i] <= '9')
 	{
