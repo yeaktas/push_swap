@@ -23,6 +23,7 @@ git:
 	git push git@github.com:yeaktas/push_swap.git
 
 norm:
+	@norminette $(wildcard Libft/*.c)
 	@norminette $(wildcard src/*.c)
 	@norminette $(wildcard inc/*.h)
 
